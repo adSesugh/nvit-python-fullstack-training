@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+<body>
+    <form action="" method="POST">
+       <p>
+            <input type="text" name="fullname" size="165" placeholder="Full Name" maxlength="5" required/>
+       </p>
+       <p>
+           <input type="number" name="age" placeholder="Age" min="18" max="150" value="0" />
+       </p>
+       <p>
+            <input type="date" name="dob" placeholder="Date of Birth" max="2015-12-31" />
+       </p>
+       <p>
+            <input type="password" name="password" placeholder="Password" min="8" maxlength="15" />
+       </p>
+       <p>
+            Sponsored: <input type="checkbox" name="sponsored" checked /> <br />
+            Python Fullstack: <input type="checkbox" name="python" />
+        </p>
+        <p>
+            Male: <input type="radio" name="gender" checked /> <br />
+            Female: <input type="radio" name="gender" />
+        </p>
+       <p>
+            <input type="submit" value="Submit" />
+       </p>
+       <p>
+            <textarea name="message" rows="10" cols="50" placeholder="Message"></textarea>
+       </p>
+       <p>
+            <select required name="course">
+                <option value="">Select Course</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </select>
+       </p>
+       <p>
+            <input placeholder="Phone Number" />
+            <input placeholder="Email Address" />
+       </p>
+       <br />
+       <hr />
+       <table>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="fullname" placeholder="Full Name" style="width: 340px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="tel" name="phone" placeholder="Phone Number" />
+                    </td>
+                    <td>
+                        <input type="email" name="email" placeholder="Email Address" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea rows="6" name="message" placeholder="Message" style="width: 340px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <input type="reset" value="Cancel" />
+                        <input type="button" value="Send" />
+                    </td>
+                </tr>
+            </tbody>
+       </table>
+    </form>
+</body>
+</html>
