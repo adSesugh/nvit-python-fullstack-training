@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form</title>
+</head>
+<body>
+    <form enctype="multipart/form-data">
+        <div style="margin-bottom: 10px;">
+            <label>Full Name</label>
+            <input type="text" name="fullname" id="fullname"/>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Upload Photo (150x150px) of not more than 2MB</label><br  />      
+            <input type="file" accept="images/*" name="photo" id="photo" />
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Date of Birth</label>
+            <input type="date" name="dob" max="2023-08-16" />
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Clock In Time</label>
+            <input type="time" name="clock-in" max="11:40" />
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Email</label>
+            <input type="email" name="email" />
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Search</label>
+            <input type="search" name="q" />
+        </div>
+    </form>
+    <hr />
+    <p>Field Set</p>
+    <fieldset>
+        <legend>Bio-data</legend>
+        <div style="margin-bottom: 10px;">
+            <label>Full Name</label>
+            <input type="text" name="fullname" id="fullname"/>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Upload Photo (150x150px) of not more than 2MB</label><br  />      
+            <input type="file" accept="images/*" name="photo" id="photo" />
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Date of Birth</label>
+            <input type="date" name="dob" max="2023-08-16" />
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Educations</legend>
+        <ul>
+            <li>B.Sc Computer Science - Yola State University</li>
+            <li>Python Certified Entry Level Programmer - New Vision Institute of Technology</li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Work Experience</legend>
+        <ol>
+            <li>
+                Fullstack Python Engineer
+                <ul>
+                    <li>Django</li>
+                    <li>RESTFUL API</li>
+                </ul>
+            </li>
+            <li>
+                Server Administration
+                <ul>
+                    <li>Linux</li>
+                    <li>Scripting</li>
+                </ul>
+            </li>
+        </ol>
+    </fieldset>
+    <hr />
+    <p>Grouping select option</p>
+    <select name="lga" required>
+        <option value="">Select your LGA</option>
+        <optgroup title="Benue" label="Benue">
+            <option>Otukpo</option>
+            <option>Buruku</option>
+            <option>Obi</option>
+            <option>Gboko</option>
+            <option>Makurdi</option>
+        </optgroup>
+        <optgroup title="Lagos" label="Lagos">
+            <option>Ikeja</option>
+            <option>Isolo</option>
+            <option>Agege</option>
+            <option>Ikorodu</option>
+        </optgroup>
+    </select>
+</body>
+</html>

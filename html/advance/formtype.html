@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Type</title>
+</head>
+
+<body>
+    <p>Form Type</p>
+    <form method="post" enctype="multipart/form-data">
+        <ul>
+            <li>
+                <div>
+                    <p>Text -> Alphanumeric input. For example</p>
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="Full Name"  size="40" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>number -> only numeric input. For example</p>
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" placeholder="Age" min="18" max="200" size="40" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>file -> uploadable input. For example</p>
+                    <div>
+                        <label for="photo">Profile Photo</label>
+                        <input type="file" name="photo" id="photo" accept="image/png" max="1024" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>password -> Password/Secret input. For example</p>
+                    <div>
+                        <label for="pin">Card PIN</label>
+                        <input type="password" name="pin" id="pin" maxlength="4" autofocus required />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>password -> Password/Secret input. For example</p>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" minlength="8" maxlength="16" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>color -> Color selection input. For example</p>
+                    <div>
+                        <label for="color_selection">Color Selection</label>
+                        <input type="color" name="color_selection" id="color_selection" value="#F0F0F0" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>search -> search input. For example</p>
+                    <div>
+                        <label for="query">Search User</label>
+                        <input type="search" name="query" id="query" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>email -> set input to type email. For example</p>
+                    <div>
+                        <label for="email_address">Email Address</label>
+                        <input type="email" name="email_address" id="email_address" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>tel -> telephone input. For example</p>
+                    <div>
+                        <label for="phone">Mobile Number</label>
+                        <input type="tel" name="phone" id="phone" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>url -> enforce input to url format. For example</p>
+                    <div>
+                        <label for="domain">URL</label>
+                        <input type="url" name="domain" id="domain" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>range -> enforce input to range format. For example</p>
+                    <div>
+                        <label for="range_input">URL</label>
+                        <input type="range" name="range_input" id="range_input" step="25" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>date -> enforce input to date format. For example</p>
+                    <div>
+                        <label for="dob">DOB</label>
+                        <input type="date" name="dob" id="dob" max="2023-08-17" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>time -> enforce input to time format. For example</p>
+                    <div>
+                        <label for="time">Clock-In</label>
+                        <input type="time" name="time" id="time" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>month -> enforce input to time format. For example</p>
+                    <div>
+                        <label for="month">Month</label>
+                        <input type="month" name="month" id="month" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>Week -> enforce input to time format. For example</p>
+                    <div>
+                        <label for="week">Week</label>
+                        <input type="week" name="week" id="week" size="40" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>reset -> reset all input field in a form. For example</p>
+                    <div>
+                        <input type="reset" />
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <input type="submit" value="Submit" />
+        <input type="button" value="Submit" />
+    </form>
+</body>
+
+</html>
