@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Gradient</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(green, purple);
+            box-shadow: 25px;
+        }
+    </style> 
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; width: 100vw; height: 100vh">
+        <div style="width: 50vw; height: 100vh">A</div>
+        <div style="display: flex; width: 50vw; height: 100vh; background: linear-gradient(blue, gray); justify-content: center; align-items: center;">
+            <div style="margin: 50px; background-color: white; width: 60%; height:50vh; border-top-left-radius: 35px; border-bottom-right-radius: 35px; box-shadow: 25px;">
+               <!-- <input style="width:93%" /> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

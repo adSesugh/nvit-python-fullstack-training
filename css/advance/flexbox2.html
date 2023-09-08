@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 2</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            box-shadow: inset 0% 0% 2% #f0d7d7;
+        }
+        .a {
+            display: flex;
+            width: 50vw;
+        }
+        .b {
+            display: flex;
+            flex-grow: 1;
+            width: 50vw;
+            background-color: rgb(225, 194, 194);
+            justify-content: center;
+            align-items: center;
+        }
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 60vh;
+            width: 35vw;
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 2px 3px 0.5px 1px rgb(237, 223, 223);
+        }
+        @media screen and (max-width: 600px) {
+            .a {
+                display: none;
+            }
+            .b {
+                width: 100vw;
+                background-image: url(matheus.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .login-container {
+                margin: 0px auto;
+                opacity: 0.4;
+                width: 80vw;
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        .form-container {
+            display: flex;
+            width: 100%;
+        }
+        .form-group {
+            display: flex;
+            margin: 5px 25px;
+
+        }
+        .form-control {
+            display: flex;
+            padding: 10px 10px;
+            border-radius: 10px;
+            width: 100%;
+            height: 20px;
+            border: 1px #c0afaf solid
+        }
+        button {
+            color: white;
+            padding: 8px;
+            border-radius: 8px; 
+            background-color: brown;
+            font-size: 12px;
+            margin: 5px 25px;
+            height: 40px;
+        }
+        .video-container {
+            display: flex;
+        }
+        .link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">
+            <video autoplay class="video-container">
+                <source src="animie.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="b">
+            <div class="login-container">
+                <div style="text-align: center; border-bottom: 1px #e5d6d6 solid;padding: 15px;">
+                    <span style="font-weight: bold; text-align:center; margin-top: 25px; font-size:medium;">Sign in to continue</span>
+                </div>
+                <form class="form-container">
+                    <div class="form-group">
+                        <input class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" > Remember Me
+                        </label>
+                    </div>
+                    <button>Log in</button>
+                    <div class="form-group">
+                        <span>Do not have account?&nbsp;</span><a href="#" class="link">Register</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

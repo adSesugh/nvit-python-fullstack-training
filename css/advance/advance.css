@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box {
+    height: 20Vh;
+    width: 20vw;
+    background-color: brown;
+    border: 2px white solid;
+}
+
+.box1 {
+    flex-grow: 1;
+    background-color: green;
+}
+
+.box2 {
+    flex-grow:4;
+    background-color: yellow;
+}
+
+.box3 {
+    flex-grow: 1;
+    background-color: brown;
+}
+
+@media screen and (max-width: 600px) {
+    .box2 {
+        display: block;
+        background: url(matheus.jpg) repeat center;
+        filter: brightness(0.3);
+    }
+    .box3 {
+        display: none;
+    }
+    .heading-1 {
+        display: none;
+        color: white;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .box1 {
+        display: none;
+    }
+}
+
+.heading-1 {
+    visibility: visible;
+}

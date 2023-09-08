@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        .circle {
+            display: flex;
+            width: 15%;
+            height: 30%;
+            border-radius: 100%;
+            border-style: solid;
+            border-width: 15px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+        .container {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            height: 100vh; 
+            border: 1px solid; 
+        }
+        .text-sm {
+            font-size: x-small;
+        }
+        .text-md {
+            font-size: medium;
+        }
+        .text-lg {
+            font-size: large;
+        }
+        .text-xl {
+            font-size: larger;
+        }
+        .text-2xl {
+            font-size: xx-large;
+        }
+        .text-white {
+            color: white;
+        }
+        .border-black {
+            border-color: black;
+        }
+        .border-gray-100 {
+            border-color: gray;
+        }
+        .border-red {
+            border-color: red;
+        }
+        .bg-green {
+            background-color: green;
+        }
+        .bg-green-900 {
+            background-color: rgb(1, 30, 1);
+        }
+        .bg-pink {
+            background-color: pink;
+        }
+        .bg-green-100 {
+            background-color: rgb(156, 236, 156);
+        }
+        .adole-position {
+            top: 0px;
+            right: 0px;
+        }
+        .omaaka-position {
+            bottom: 0px;
+            left: 0px;
+        }
+        .precious-position {
+            bottom: 0px;
+            right: 0px;
+        }
+        .jesse-position {
+            right: 0px;
+            left: 18%;
+        }
+        .justina-bg {
+            background: linear-gradient(to right, pink, purple);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle text-2xl bg-green text-white border-red precious-position">
+            Precious
+        </div>
+        <div class="circle text-xl bg-green-900 text-white border-gray-100 jesse-position">
+            Jesse
+        </div>
+        <div class="circle text-md bg-pink adole-position">
+            Adole
+        </div>
+        <div class="circle text-xl bg-green-900 text-white border-gray-100 omaaka-position">
+            Omaaka
+        </div>
+        <div class="circle text-md bg-green-100 justina-bg">
+            Justina
+        </div>
+    </div>
+</body>
+</html>

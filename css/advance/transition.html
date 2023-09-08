@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        a:link {
+            text-decoration: none;
+            font-size: 20px;
+        }
+        a:hover {
+            text-decoration: overline;
+            font-size: 10px;
+            transition: all .5s ease-out 0;
+            color: brown;
+            transform: rotate(180deg);
+        }
+
+        span:hover {
+            transform: scale(2,3);
+            transition: all 0.5 ease-in 0;
+        }
+
+        img:hover {
+            transform: scale(1, 1.2);
+            transition: all 0.5s ease-in;
+            transform-origin: 0px 0px;
+            opacity: 0.5;
+        }
+        body {
+            background-image: radial-gradient(yellow, blue, red,violet);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <img src="matheus.jpg" alt="finegirl" style="width: 20vw; height:20vh" />
+</body>
+</html>

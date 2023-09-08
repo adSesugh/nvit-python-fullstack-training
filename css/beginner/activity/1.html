@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+        .row {
+            height: 50vh;
+            width: 110vh;
+        }
+        .box {
+            display: flex;
+            width: 50vw;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .bg-green {
+            background-color: green;
+        }
+        .bg-gray {
+            background-color: gray;
+        }
+        .bg-pink {
+            background-color: pink;
+        }
+        .bg-orange {
+            background-color: orange;
+        }
+        .circle-1 {
+            display: flex;
+            border: 2px solid;
+            width: 20vw;
+            height: 40vh;
+            border-radius: 25%;
+            border-width: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle-2 {
+            display: flex;
+            border: 2px solid;
+            width: 20vw;
+            height: 40vh;
+            border-radius: 50%;
+            border-width: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle-3 {
+            display: flex;
+            border: 2px solid;
+            width: 20vw;
+            height: 40vh;
+            border-bottom-right-radius: 25px;
+            border-start-start-radius: 25px;
+            border-end-start-radius: 25px;
+            border-width: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle-4 {
+            display: flex;
+            border: 2px solid;
+            width: 20vw;
+            height: 40vh;
+            border-width: 10px;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-white {
+            color: white;
+            font-size: large;
+            font-weight: 700;
+        }
+        .middle-circle {
+            display: flex;
+            position: absolute;
+            padding: 8%;
+            height: 15%;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            top: 25%;
+        }
+        .position-1 {
+            left: 0px;
+            background-color: brown;
+        }
+        .position-2 {
+            right: 0px;
+            background-color: brown;
+        }
+        .position-3 {
+            left: 38%;
+            background-image: url('john.png');
+            object-fit: cover;
+            background-position: center;
+            height: 13%;
+            width: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box bg-gray">
+                <div class="circle-1 bg-green text-white">Agriculture</div>
+            </div>
+            <div class="box bg-orange">
+                <div class="circle-2 bg-pink text-white">Minerals</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box bg-pink">
+                <div class="circle-3 bg-orange text-white">Technology</div>
+            </div>
+            <div class="box bg-green">
+                <div class="circle-4 bg-gray text-white">Fashion</div>
+            </div>
+        </div>
+        <div class="middle-circle text-white position-1">
+            Middle Belt
+        </div>
+        <div class="middle-circle text-white position-3">
+            Ortom
+        </div>
+        <div class="middle-circle text-white position-2">
+            Middle Belt
+        </div>
+    </div>
+</body>
+</html>

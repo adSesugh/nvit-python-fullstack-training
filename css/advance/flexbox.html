@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items:center;
+            flex-wrap: wrap-reverse;
+            align-self: flex-end;
+            height: 100vh;
+        }
+        .box {
+            border: 5px solid chocolate;
+            background-color: brown;
+            height: 20vh;
+            width: 20vw;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Hello</h1>
+        </div>
+        <div class="box">Good morning</div>
+        <div class="box">Precious</div>
+        <div class="box">Innocent</div>
+        <div class="box">Victor</div>
+        <div class="box">Micheal</div>
+        <div class="box">Adole</div>
+    </div>
+</body>
+</html>
