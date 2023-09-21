@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+
+<body>
+    <ul></ul>
+    <button id="toggle">Toggle</button>
+    <div id="hello">
+        <form>
+            <input type="text" />
+            <fieldset>
+                <legend>Bio-data</legend>
+                <div>
+                    <label for="name">Full name</label>
+                    <input type="text" name="fullname" id="name" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <ul id="list"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/comments',
+            method: 'GET',
+            success: (data) => {
+                console.log(data);
+                const li = document.createElement('li');
+                const ul = document.getElementById('list');
+                data.forEach(el => {
+                    li.innerHTML = JSON.stringify(el);
+                });
+
+                ul.appendChild(li);
+            },
+            error: (data) => {
+                console.log(data);
+            }
+        });
+
+        // const tog = document.getElementById('toggle');
+        // tog.addEventListener('click', (e) => {
+        //     console.log(e);
+        //     $('#hello').toggle();
+        //     //document.body.style.backgroundColor = 'red';
+        // });
+        $('#toggle').click(function () {
+            $('#hello').fadeToggle();
+        })
+    </script>
+</body>
+
+</html>

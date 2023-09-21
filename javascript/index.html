@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript in HTML</title>
+    <style>
+        .nav {
+            /*color: white; */
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="func" onclick="showFn()">Show Me</button>
+    <!-- <div id="show">Hi</div> -->
+    <p id="textValue"></p>
+    <button id="swapColor">Swap Color</button>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+    <p id="demo"></p>
+    <button onclick="this.innerHTML = Date()">The time is?</button>
+
+    <script src="main.js"></script>
+    <script type="text/javascript">
+        const textId = document.getElementById('textValue');
+        let str = '5995';
+        let padding = str.padStart(10, '*');
+        textId.innerHTML = padding;
+        prompt('Enter a number');
+        document.title = 'Lab 5'
+    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>
